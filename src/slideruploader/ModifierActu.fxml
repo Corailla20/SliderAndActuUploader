@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="323.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="slideruploader.ModifierActuController">
+  <Label layoutX="246.0" layoutY="17.0" text="Modifier Actualité" textAlignment="CENTER">
+    <font>
+      <Font size="16.0" />
+    </font>
+  </Label>
+  <TextField fx:id="titreActualite" layoutX="33.0" layoutY="52.0" prefWidth="347.0" promptText="Titre" />
+  <TextField fx:id="urlActualite" layoutX="33.0" layoutY="84.0" prefWidth="347.0" promptText="URL Image" />
+  <TextArea fx:id="contenuActualite" layoutX="33.0" layoutY="122.0" prefHeight="129.0" prefWidth="539.0" promptText="Contenu" />
+  <HBox alignment="CENTER" layoutX="33.0" layoutY="264.0" prefHeight="36.0" prefWidth="553.0">
+    <children>
+      <Button fx:id="buttonValiderModif" mnemonicParsing="false" prefWidth="100.0" text="Valider">
+        <HBox.margin>
+          <Insets right="30.0" />
+        </HBox.margin>
+      </Button>
+      <Button fx:id="buttonAnnulerModif" mnemonicParsing="false" prefWidth="100.0" text="Annuler" />
+    </children>
+  </HBox>
+  <Label fx:id="labelSout" alignment="CENTER" minHeight="14.0" prefHeight="21.000099999997474" prefWidth="572.0" text="" textAlignment="CENTER" textFill="#cc3100" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="300.0" />
+</AnchorPane>

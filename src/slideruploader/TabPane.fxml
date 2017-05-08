@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane prefHeight="500" prefWidth="1000" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <tabs>
+    <Tab text="Bannières">
+      <content>
+        <fx:include fx:id="barTabPage" source="Slider.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Actualités">
+      <content>
+        <fx:include fx:id="barTabPage2" source="Actualites.fxml" />
+      </content>
+    </Tab>
+    <Tab text="Offres Emploi">
+      <content>
+        <fx:include fx:id="barTabPage3" source="OffreEmploi.fxml" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

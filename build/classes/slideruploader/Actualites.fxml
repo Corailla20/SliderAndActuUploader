@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="136.0" prefHeight="450.0" prefWidth="990.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="slideruploader.ActualitesController">
+  <children>
+    <Button fx:id="buttonAjouter" layoutX="910.0" layoutY="115.0" text="Ajouter" />
+    <Label layoutX="137.0" layoutY="17.0" text="Nouvelle Actualité" textAlignment="CENTER">
+      <font>
+        <Font size="15.0" />
+      </font>
+    </Label>
+    <TextField fx:id="titreActualite" layoutX="33.0" layoutY="52.0" prefWidth="347.0" promptText="Titre" />
+    <TextField fx:id="urlActualite" layoutX="33.0" layoutY="84.0" prefWidth="347.0" promptText="URL Image" />
+    <TextArea fx:id="contenuActualite" layoutX="388.0" layoutY="52.0" prefHeight="54.000099999997474" prefWidth="581.0" promptText="Contenu" />
+    <TableView fx:id="tableView" layoutX="19.0" layoutY="155.0" prefHeight="235.0" prefWidth="957.0">
+      <columns>
+        <TableColumn prefWidth="250.0" text="Titre" fx:id="columnTitre" />
+        <TableColumn prefWidth="405.0" text="Contenu" fx:id="columnContenu" />
+        <TableColumn prefWidth="300.0" text="URL" fx:id="columnURL" />
+      </columns>
+    </TableView>
+    <HBox alignment="CENTER" layoutX="0.0" layoutY="399.0" prefHeight="22.0" prefWidth="990.0">
+      <children>
+        <Button fx:id="buttonModifier" mnemonicParsing="false" prefWidth="100.0" text="Modifier">
+          <HBox.margin>
+            <Insets right="30.0" fx:id="x1" />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="buttonSupprimer" mnemonicParsing="false" prefWidth="100.0" text="Supprimer" HBox.margin="$x1" />
+        <Button fx:id="buttonSynchroniser" mnemonicParsing="false" prefWidth="100.0" text="Synchroniser">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </Button>
+      </children>
+    </HBox>
+    <Label fx:id="labelSout" alignment="CENTER" text="" textAlignment="CENTER" textFill="#cc3100" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" />
+  </children>
+</AnchorPane>
